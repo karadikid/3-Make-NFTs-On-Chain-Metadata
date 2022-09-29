@@ -1,0 +1,23 @@
+{
+  "name": "3-Make-NFTs-On-Chain-Metadata",
+  "version": "1.0.0",
+  "description": "Making NFTs with On Chain Metadataa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karadikid/3-Make-NFTs-On-Chain-Metadata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karadikid/3-Make-NFTs-On-Chain-Metadata/issues"
+  },
+  "homepage": "https://github.com/karadikid/3-Make-NFTs-On-Chain-Metadata#readme",
+  "devDependencies": {
+    "hardhat": "^2.11.2"
+  }
+}
