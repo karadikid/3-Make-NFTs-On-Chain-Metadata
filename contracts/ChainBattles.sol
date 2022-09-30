@@ -6,14 +6,14 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 
-// Deployed to Polygon Mumbai 0xA0D8e657c03CeDDeE7d2d1eC506CCa200690c2bE 
+// Deployed to Polygon Mumbai 0xD47A9FfcC3Ef7596ecE7d39c6C6a035D01212a83 
 
 contract ChainBattles is ERC721URIStorage {
     using Strings for uint256;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    mapping(uint256 => uint256) public tokenIdtoLevels;
+    mapping(uint256 => uint256) public tokenIdToLevels;
 
     constructor() ERC721("Chain Battles", "CBTLS"){
 
@@ -36,7 +36,7 @@ contract ChainBattles is ERC721URIStorage {
         );
 }
     function getLevels(uint256 tokenId) public view returns(string memory){
-        uint256 levels = tokenIdtoLevels[tokenId];
+        uint256 levels = tokenIdToLevels[tokenId];
         return levels.toString();
     }
 
@@ -60,15 +60,15 @@ contract ChainBattles is ERC721URIStorage {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
         _safeMint(msg.sender, newItemId);
-        tokenIdtoLevels[newItemId] = 0;
+        tokenIdToLevels[newItemId] = 0;
         _setTokenURI(newItemId, getTokenURI(newItemId));
     }
 
     function train(uint256 tokenId) public {
         require(_exists(tokenId), "Please use an existing token");
         require(ownerOf(tokenId) == msg.sender, "You must own this token to train it.");
-        uint256 currentLevel = tokenIdtoLevels[tokenId];
-        tokenIdtoLevels[tokenId] = currentLevel = 1;
+        uint256 currentLevel = tokenIdToLevels[tokenId];
+        tokenIdToLevels[tokenId] = currentLevel + 1;
         _setTokenURI(tokenId, getTokenURI(tokenId));
     }
 }
