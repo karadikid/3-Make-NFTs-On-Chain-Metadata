@@ -34,11 +34,3 @@ npx hardhat --verify <CONTACT ADDRESS FROM #8> --network mumbai
 13. Verify on [OpenSea](https://testnets.opensea.io/account)
 ![NFT Train](NFT-Train-1.png)
 
-
-```
-1. Connect Wallet
-2. Ensure on appropriate Web3 Network (Ethereum Goerli)
-3. Enter Name
-4. Write a friendly message
-5. Sign request
-```
