@@ -15,6 +15,18 @@ contract ChainBattles is ERC721URIStorage {
 
     mapping(uint256 => uint256) public tokenIdToLevels;
 
+    struct character {
+        uint256 level;
+        uint256 hp;
+        uint256 strength;
+        uint256 speed;
+    }
+    //track levels
+    //track hp
+    //track strength
+    //track speed
+
+
     constructor() ERC721("Chain Battles", "CBTLS"){
 
     }
