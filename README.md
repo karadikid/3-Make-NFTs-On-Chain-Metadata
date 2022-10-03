@@ -34,3 +34,5 @@ npx hardhat --verify <CONTACT ADDRESS FROM #8> --network mumbai
 13. Verify on [OpenSea](https://testnets.opensea.io/account)
 ![NFT Train](NFT-Train-1.png)
 
+//https://medium.com/coinmonks/solidity-tutorial-returning-structs-from-public-functions-e78e48efb378
+//https://jeancvllr.medium.com/solidity-tutorial-all-about-structs-b3e7ca398b1e
