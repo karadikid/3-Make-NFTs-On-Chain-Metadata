@@ -139,12 +139,14 @@ contract ChainBattles is ERC721URIStorage {
             ownerOf(tokenId) == msg.sender,
             "You must own this token to train it."
         );
+
+        //Gets current character values
         uint256 currentLevel = tokenIdToLevels[tokenId].level;
         uint256 currentHp = tokenIdToLevels[tokenId].hp;
         uint256 currentStrength = tokenIdToLevels[tokenId].strength;
         uint256 currentSpeed = tokenIdToLevels[tokenId].speed;
         
-
+        //Increments character values
         tokenIdToLevels[tokenId].level = currentLevel + 1;
         tokenIdToLevels[tokenId].hp = currentHp + 1;
         tokenIdToLevels[tokenId].strength = currentStrength + 1;

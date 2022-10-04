@@ -23,13 +23,13 @@ npx hardhat compile
 ```javascipt
 npx hardhat run scripts/deploy.js --network mumbai
 ```
-9. Verify contract code on Polygon Scan Mumbai, returns URL https://mumbai.polygonscan.com/address/0x16945355b24edF9A4068AEf71B41f4e976251E05#code (My contract code)
+9. Verify contract code on Polygon Scan Mumbai, returns URL https://mumbai.polygonscan.com/address/0xb3142AD7D5D53E155d37eA87409a4A6aA215D6Bb#code (My contract code)
 ```javascipt
 npx hardhat --verify <CONTACT ADDRESS FROM #8> --network mumbai
 ```
 10. Interact with contract in Polygon Scan, Mint.
 11. Verify on [OpenSea](https://testnets.opensea.io/account)
-![NFT First Mint Screenshot](NFT-1stMint.png)
+![NFT First Mint Screenshot](StructOfMetrics.png)
 12. Level up by executing train on Polygon Scan with '1' as the value (We only minted one NFT)
 13. Verify on [OpenSea](https://testnets.opensea.io/account)
 ![NFT Train](NFT-Train-1.png)
