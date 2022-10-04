@@ -35,3 +35,4 @@ npx hardhat --verify <CONTACT ADDRESS FROM #8> --network mumbai
 ![NFT Train](StructOfMetrics_Post_Training.jpg)
 
 [Struct Reference](https://jeancvllr.medium.com/solidity-tutorial-all-about-structs-b3e7ca398b1e)
+[Pseudo Random Functions - Danger - Deterministic](https://blog.finxter.com/how-to-generate-random-numbers-in-solidity/)
